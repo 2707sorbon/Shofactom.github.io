@@ -66,3 +66,32 @@ footer {
     text-decoration: none;
     margin: 0 0.5em;
 }
+
+/* Бургер-меню для мобильных */
+.burger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #1e1e1e;
+        padding: 1em;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
